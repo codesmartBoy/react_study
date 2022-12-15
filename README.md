@@ -70,3 +70,13 @@ npm i reduxjs/toolkit@1.9.1 react-redux@8.0.5
 useSelector 默认监听的是整个 state
 
 ## useId
+
+## useTransition
+
+告诉 react 对于某部分任务的更新优先级较低，可以稍后进行更新
+const [pending, startTransition] = useTransition();
+pending 表示任务状态
+
+## useDeferredValue
+
+延迟更新
